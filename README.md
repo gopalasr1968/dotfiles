@@ -1,7 +1,7 @@
 # dotfiles
 Config files for my GitHub profile.
 
-config checkout main
+config checkout main <CR>
 config branch
 config add <dotfiles to add>
 config commit -m <Commit Message>
