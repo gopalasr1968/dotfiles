@@ -1,0 +1,324 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
+
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/srinivas/.oh-my-zsh"
+
+#Path to Python
+#export PATH="/usr/local/bin/python3.9:$PATH"
+export PYTHONPATH="Users/srinivas/opt/anaconda3/lib/python3.8/site-packages":$PYTHONPATH
+export CC='gcc-11'
+
+#Path to Ruby.
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#ZSH_THEME="robbyrussell"
+#ZSH_THEME="clear"
+#POWERLEVEL9K_MODE="nerdfont-complete"
+ZSH_THEME='fino-time'
+#ZSH_THEME="spaceship"
+#source ~/.oh-my-zsh/custom/themes/myspaceship.zsh
+
+# >>> SPACESHIP PRSETS STARTS HERE
+# ORDER
+# node
+#SPACESHIP_PROMPT_ORDER=(
+#  time     #
+#  vi_mode  # these sections will be
+#  user     # before prompt char
+#  host     #
+#  char
+#  dir
+#  git
+#  node
+#  ruby
+#  xcode
+#  swift
+#  golang
+#  docker
+#  venv
+#  pyenv
+#)
+
+#PROMPT
+#SPACESHIP_PROMPT_ADD_NEWLINE=false
+#SPACESHIP_PROMPT_SEPARATE_LINE=false
+#SPACESHIP_PROMPT_FIRST_PREFIX_SHOW="${SPACESHIP_PROMPT_FIRST_PREFIX_SHOW=false}"
+#SPACESHIP_PROMPT_PREFIXES_SHOW="${SPACESHIP_PROMPT_PREFIXES_SHOW=true}"
+#SPACESHIP_PROMPT_SUFFIXES_SHOW="${SPACESHIP_PROMPT_SUFFIXES_SHOW=true}"
+#SPACESHIP_PROMPT_DEFAULT_PREFIX="${SPACESHIP_PROMPT_DEFAULT_PREFIX="via "}"
+#SPACESHIP_PROMPT_DEFAULT_SUFFIX="${SPACESHIP_PROMPT_DEFAULT_SUFFIX=" "}"
+
+# USER
+#SPACESHIP_USER_PREFIX="sg" # remove `with` before username
+#SPACESHIP_USER_SUFFIX="" # remove space before host
+
+# HOST
+# Result will look like this:
+#username@:(hostname)
+#SPACESHIP_HOST_PREFIX="@:("
+#SPACESHIP_HOST_SUFFIX=") "
+
+# DIR
+#SPACESHIP_DIR_PREFIX='' # disable directory prefix, cause it's not the first section
+#SPACESHIP_DIR_TRUNC='1' # show only last directory
+#SPACESHIP_NODE_SHOW_IN_HOME=false
+
+# GIT
+# Disable git symbol
+##SPACESHIP_GIT_SYMBOL="" # disable git prefix
+#SPACESHIP_GIT_BRANCH_PREFIX="" # disable branch prefix too
+# Wrap git in `git:(...)`
+#SPACESHIP_GIT_PREFIX='git:('
+#SPACESHIP_GIT_SUFFIX=") "
+#SPACESHIP_GIT_BRANCH_SUFFIX="" # remove space after branch name
+# Unwrap git status from `[...]`
+#SPACESHIP_GIT_STATUS_PREFIX=""
+#SPACESHIP_GIT_STATUS_SUFFIX=""
+
+# NODE
+#SPACESHIP_NODE_PREFIX="node:("
+#SPACESHIP_NODE_SUFFIX=") "
+#SPACESHIP_NODE_SYMBOL=""
+
+# RUBY
+#SPACESHIP_RUBY_PREFIX="ruby:("
+#SPACESHIP_RUBY_SUFFIX=") "
+#SPACESHIP_RUBY_SYMBOL=""
+
+# XCODE
+#SPACESHIP_XCODE_PREFIX="xcode:("
+#SPACESHIP_XCODE_SUFFIX=") "
+#SPACESHIP_XCODE_SYMBOL=""
+
+# SWIFT
+#SPACESHIP_SWIFT_PREFIX="swift:("
+#SPACESHIP_SWIFT_SUFFIX=") "
+#SPACESHIP_SWIFT_SYMBOL=""
+
+# GOLANG
+#SPACESHIP_GOLANG_PREFIX="go:("
+#SPACESHIP_GOLANG_SUFFIX=") "
+#SPACESHIP_GOLANG_SYMBOL=""
+
+# DOCKER
+#SPACESHIP_DOCKER_PREFIX="docker:("
+#SPACESHIP_DOCKER_SUFFIX=") "
+#SPACESHIP_DOCKER_SYMBOL=""
+
+# VENV
+#SPACESHIP_VENV_PREFIX="venv:("
+#SPACESHIP_VENV_SUFFIX=") "
+
+# PYENV
+#SPACESHIP_PYENV_PREFIX="python:("
+#SPACESHIP_PYENV_SUFFIX=") "
+#SPACESHIP_PYENV_SYMBOL=""
+
+# VI Mode
+#SPACESHIP_VI_MODE_SHOW=false
+
+# >>> SPACESHIP THEME PRESETS ENDS HERE
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+
+# for some reasons autosuggestions not launching from oh-my-zsh
+source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+plugins=(git)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting vi-mode)
+plugins=(alias-finder common-aliases copydir copyfile extract vi-mode vscode web-search z)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+#alias zshconfig="vim ~/.zshrc"
+#alias ohmyzsh="vim ~/.oh-my-zsh"
+
+# Python aliases
+#alias python=/usr/local/bin/python3.9
+alias python=/Users/srinivas/opt/anaconda3/bin/python3
+#alias pip="/usr/local/bin/pip3"
+export LC_ALL=en_US.UTF-8
+
+# Other Plugins (zsh)
+source ~/.fzf.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Auto Jump Plugin
+ [[ -s /Users/srinivas/.autojump/etc/profile.d/autojump.sh ]] && source /Users/srinivas/.autojump/etc/profile.d/autojump.sh
+    autoload -U compinit && compinit -u
+
+
+# Expand the history size.
+export HISTFILESIZE=10000
+export HISTSIZE=500
+export HISTCONTROL=erasedups:ignoredups:ignorespace
+
+alias c="clear"
+alias ping="ping -c 5"
+alias fastping='ping -c 100 -s.2'
+alias ports='netstat -tulanp'
+alias mount='mount | column -t'
+alias wget="wget -c"
+alias vi='vim'
+alias v='vim'
+alias h="history | grep "
+alias less='less -R'
+
+alias grep='grep --color'
+alias t='tail -f'
+
+alias h='history'
+alias hgrep="fc -El 0 | grep"
+alias help='man'
+alias p='ps -f'
+alias sortnr='sort -n -r'
+alias unexport='unset'
+
+# disk aliases
+alias df="df -Tha --total"
+alias du="du -ach | sort -h"
+alias wget="wget -c"
+alias top="htop"
+alias mkdir="mkdir -pv"
+
+# Find a file with a pattern in name:
+function ff() { find . -type f -iname '*'"$*"'*' -ls ; }
+
+# Set the new vim
+alias vi='nvim'
+alias vim='nvim'
+export EDITOR='nvim'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/srinivas/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/srinivas/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/srinivas/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+       export PATH="/Users/srinivas/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# Node JS Setings
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export LDFLAGS="-L/usr/local/opt/icu4c/lib"
+export CPPFLAGS="-I/usr/local/opt/icu4c/include"
+export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="/usr/local/sbin:$PATH"
+
+# loading dracula themes
+#export ZPLUG_HOME=/usr/local/opt/zplug
+#if [ -f ${ZPLUG_HOME}/init.zsh ]; then
+#    source ${ZPLUG_HOME}/init.zsh
+#fi
+
+#zplug "dracula/zsh", as:theme
